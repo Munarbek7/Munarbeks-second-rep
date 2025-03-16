@@ -1,0 +1,61 @@
+Project Description
+This is a console-based calculator written in Java. It supports basic arithmetic operations (+, -, *, /, %) and additional functions (power, sqrt, abs, round). The program follows operator precedence, handles invalid inputs, and includes a history feature.
+
+Features
+
+Basic arithmetic operations: +, -, *, /, %
+Functions: power(base, exponent), sqrt(number), abs(number), round(number)
+Handles operator precedence
+Graceful error handling (e.g., division by zero, invalid expressions)
+History feature to recall past calculations
+No external libraries required (pure Java)
+Design & Implementation
+Algorithm:
+
+Uses the Shunting-yard algorithm to evaluate expressions correctly.
+Postfix notation (Reverse Polish Notation) is used for computation.
+Data Structures Used:
+
+Stack (for operators in infix-to-postfix conversion).
+Queue (for postfix evaluation).
+Error Handling:
+
+Catches invalid expressions.
+Handles division by zero.
+Detects mismatched parentheses.
+How to Use
+
+Run the program in a Java-supported IDE (e.g., IntelliJ IDEA, Eclipse).
+Enter an expression, for example:
+5 + 3 * (2 + 8)
+The program evaluates the result and asks if you want to continue.
+Type "history" to see past calculations.
+Type "exit" to quit.
+How to Run (Using Terminal)
+Compile the Java file:
+javac Calculator.java
+Run the program:
+java Calculator
+
+Example Inputs & Outputs
+
+Example 1:
+Input:
+5 + 3 * (2 + 8)
+Output:
+Result: 35
+
+Example 2:
+Input:
+power(2, 3) - round(4.6) / 2
+Output:
+Result: 6
+
+Example 3:
+Input:
+history
+Output:
+Calculation History:
+5 + 3 * (2 + 8) = 35
+power(2, 3) - round(4.6) / 2 = 6
+
